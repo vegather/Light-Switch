@@ -13,6 +13,12 @@
 		9A2E59FD1995812F000352B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E59FB1995812F000352B5 /* Main.storyboard */; };
 		9A2E59FF1995812F000352B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E59FE1995812F000352B5 /* Images.xcassets */; };
 		9A2E5A0B1995812F000352B5 /* Dimmer_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E5A0A1995812F000352B5 /* Dimmer_2Tests.m */; };
+		9A2E5A181995A16E000352B5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E5A171995A16E000352B5 /* Settings.bundle */; };
+		9A2E5A1E199AEC54000352B5 /* MWLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E5A1C199AEC54000352B5 /* MWLogger.swift */; };
+		9A2E5A1F199AEC54000352B5 /* MWLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E5A1D199AEC54000352B5 /* MWLogViewController.swift */; };
+		9A34C34C19A40645002B16E3 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A34C34B19A40645002B16E3 /* iPad.storyboard */; };
+		9ADDA41319A1FA36002C7A58 /* VSTDimmerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADDA41219A1FA36002C7A58 /* VSTDimmerServer.m */; };
+		9ADDA41619A1FAD8002C7A58 /* VSTDimmerBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADDA41519A1FAD8002C7A58 /* VSTDimmerBeacon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A2E59EE1995812F000352B5 /* Dimmer 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dimmer 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2E59EE1995812F000352B5 /* Light Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E59F21995812F000352B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2E59F31995812F000352B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A2E59F51995812F000352B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +44,16 @@
 		9A2E5A041995812F000352B5 /* Dimmer 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dimmer 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E5A091995812F000352B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2E5A0A1995812F000352B5 /* Dimmer_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dimmer_2Tests.m; sourceTree = "<group>"; };
+		9A2E5A171995A16E000352B5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		9A2E5A19199AD50D000352B5 /* Dimmer 2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dimmer 2-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A2E5A1C199AEC54000352B5 /* MWLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWLogger.swift; sourceTree = "<group>"; };
+		9A2E5A1D199AEC54000352B5 /* MWLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWLogViewController.swift; sourceTree = "<group>"; };
+		9A34C34B19A40645002B16E3 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		9ADDA41119A1FA36002C7A58 /* VSTDimmerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTDimmerServer.h; sourceTree = "<group>"; };
+		9ADDA41219A1FA36002C7A58 /* VSTDimmerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTDimmerServer.m; sourceTree = "<group>"; };
+		9ADDA41419A1FAD8002C7A58 /* VSTDimmerBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTDimmerBeacon.h; sourceTree = "<group>"; };
+		9ADDA41519A1FAD8002C7A58 /* VSTDimmerBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTDimmerBeacon.m; sourceTree = "<group>"; };
+		9AEAAC0119A3BBA00079A929 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +86,7 @@
 		9A2E59EF1995812F000352B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A2E59EE1995812F000352B5 /* Dimmer 2.app */,
+				9A2E59EE1995812F000352B5 /* Light Switch.app */,
 				9A2E5A041995812F000352B5 /* Dimmer 2Tests.xctest */,
 			);
 			name = Products;
@@ -83,9 +99,18 @@
 				9A2E59F61995812F000352B5 /* AppDelegate.m */,
 				9A2E59F81995812F000352B5 /* ViewController.h */,
 				9A2E59F91995812F000352B5 /* ViewController.m */,
+				9ADDA41119A1FA36002C7A58 /* VSTDimmerServer.h */,
+				9ADDA41219A1FA36002C7A58 /* VSTDimmerServer.m */,
+				9ADDA41419A1FAD8002C7A58 /* VSTDimmerBeacon.h */,
+				9ADDA41519A1FAD8002C7A58 /* VSTDimmerBeacon.m */,
+				9A2E5A1C199AEC54000352B5 /* MWLogger.swift */,
+				9A2E5A1D199AEC54000352B5 /* MWLogViewController.swift */,
 				9A2E59FB1995812F000352B5 /* Main.storyboard */,
+				9A34C34B19A40645002B16E3 /* iPad.storyboard */,
+				9A2E5A171995A16E000352B5 /* Settings.bundle */,
 				9A2E59FE1995812F000352B5 /* Images.xcassets */,
 				9A2E59F11995812F000352B5 /* Supporting Files */,
+				9A2E5A19199AD50D000352B5 /* Dimmer 2-Bridging-Header.h */,
 			);
 			path = "Dimmer 2";
 			sourceTree = "<group>";
@@ -95,6 +120,7 @@
 			children = (
 				9A2E59F21995812F000352B5 /* Info.plist */,
 				9A2E59F31995812F000352B5 /* main.m */,
+				9AEAAC0119A3BBA00079A929 /* MyPlayground.playground */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,7 +159,7 @@
 			);
 			name = "Dimmer 2";
 			productName = "Dimmer 2";
-			productReference = 9A2E59EE1995812F000352B5 /* Dimmer 2.app */;
+			productReference = 9A2E59EE1995812F000352B5 /* Light Switch.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9A2E5A031995812F000352B5 /* Dimmer 2Tests */ = {
@@ -165,6 +191,7 @@
 				TargetAttributes = {
 					9A2E59ED1995812F000352B5 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = VP7R74RQV5;
 					};
 					9A2E5A031995812F000352B5 = {
 						CreatedOnToolsVersion = 6.0;
@@ -196,7 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A34C34C19A40645002B16E3 /* iPad.storyboard in Resources */,
 				9A2E59FD1995812F000352B5 /* Main.storyboard in Resources */,
+				9A2E5A181995A16E000352B5 /* Settings.bundle in Resources */,
 				9A2E59FF1995812F000352B5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,8 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADDA41619A1FAD8002C7A58 /* VSTDimmerBeacon.m in Sources */,
 				9A2E59FA1995812F000352B5 /* ViewController.m in Sources */,
+				9A2E5A1E199AEC54000352B5 /* MWLogger.swift in Sources */,
+				9A2E5A1F199AEC54000352B5 /* MWLogViewController.swift in Sources */,
 				9A2E59F71995812F000352B5 /* AppDelegate.m in Sources */,
+				9ADDA41319A1FA36002C7A58 /* VSTDimmerServer.m in Sources */,
 				9A2E59F41995812F000352B5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +303,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -311,6 +345,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -332,9 +367,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dimmer 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Light Switch";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimmer 2/Dimmer 2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -343,9 +388,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Dimmer 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Light Switch";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimmer 2/Dimmer 2-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
 			};
 			name = Release;
 		};
@@ -402,6 +456,7 @@
 				9A2E5A101995812F000352B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A2E5A111995812F000352B5 /* Build configuration list for PBXNativeTarget "Dimmer 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +465,7 @@
 				9A2E5A131995812F000352B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
