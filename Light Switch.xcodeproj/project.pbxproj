@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A116EF21A2A347E00946FB3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FC36F1A20C91000F7A149 /* NotificationCenter.framework */; };
+		9A116EF81A2A347E00946FB3 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A116EF71A2A347E00946FB3 /* TodayViewController.m */; };
+		9A116EFA1A2A347E00946FB3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A116EF91A2A347E00946FB3 /* MainInterface.storyboard */; };
+		9A116EFD1A2A347E00946FB3 /* Notification Switch.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A116EF11A2A347E00946FB3 /* Notification Switch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A1468DD19D05A5F0093280B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1468DC19D05A5F0093280B /* main.m */; };
+		9A1468E619D05A5F0093280B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1468E419D05A5F0093280B /* Main.storyboard */; };
+		9A1468EB19D05A5F0093280B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1468E919D05A5F0093280B /* LaunchScreen.xib */; };
+		9A1468F719D05A600093280B /* Light_SwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1468F619D05A600093280B /* Light_SwitchTests.m */; };
+		9A14690E19D05A9E0093280B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690119D05A9E0093280B /* AppDelegate.m */; };
+		9A14690F19D05A9E0093280B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690319D05A9E0093280B /* ViewController.m */; };
+		9A14691119D05A9E0093280B /* VSTDimmerBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690719D05A9E0093280B /* VSTDimmerBeacon.m */; };
+		9A14691419D05A9E0093280B /* VSTLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690D19D05A9E0093280B /* VSTLogViewController.m */; };
+		9A14691619D05AD70093280B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A14691519D05AD70093280B /* Assets.xcassets */; };
+		9A14691819D08F200093280B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A14691719D08F200093280B /* Settings.bundle */; };
+		9A25BA381A2A2A0C00FD5D95 /* LightServerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A25BA371A2A2A0C00FD5D95 /* LightServerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A25BA3E1A2A2A0C00FD5D95 /* LightServerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */; };
+		9A25BA471A2A2A0C00FD5D95 /* LightServerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A25BA461A2A2A0C00FD5D95 /* LightServerKitTests.m */; };
+		9A25BA4A1A2A2A0C00FD5D95 /* LightServerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */; };
+		9A25BA4B1A2A2A0C00FD5D95 /* LightServerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A25BA531A2A2B1D00FD5D95 /* VSTDimmerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690519D05A9E0093280B /* VSTDimmerServer.m */; };
+		9A25BA541A2A2B5000FD5D95 /* VSTCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690919D05A9E0093280B /* VSTCommand.m */; };
+		9A25BA551A2A2B5300FD5D95 /* VSTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690B19D05A9E0093280B /* VSTLogger.m */; };
+		9A3F69FA1A2BDF7700303795 /* LightSwitchType.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3F69F81A2BDF7700303795 /* LightSwitchType.h */; };
+		9A3F69FB1A2BDF7700303795 /* LightSwitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F69F91A2BDF7700303795 /* LightSwitchType.m */; };
+		9A3F69FC1A2BEB3400303795 /* LightSwitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F69F91A2BDF7700303795 /* LightSwitchType.m */; };
+		9A3F69FD1A2BEB3500303795 /* LightSwitchType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3F69F91A2BDF7700303795 /* LightSwitchType.m */; };
+		9A7911071A2A3EDC0085166B /* VSTDimmerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690519D05A9E0093280B /* VSTDimmerServer.m */; };
+		9A7911081A2A3EDD0085166B /* VSTDimmerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690519D05A9E0093280B /* VSTDimmerServer.m */; };
+		9A7911091A2A3EE40085166B /* VSTCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690919D05A9E0093280B /* VSTCommand.m */; };
+		9A79110A1A2A3EE40085166B /* VSTCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690919D05A9E0093280B /* VSTCommand.m */; };
+		9A79110B1A2A3EE80085166B /* VSTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690B19D05A9E0093280B /* VSTLogger.m */; };
+		9A79110C1A2A3EE90085166B /* VSTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14690B19D05A9E0093280B /* VSTLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A116EFB1A2A347E00946FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1468CF19D05A5F0093280B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A116EF01A2A347E00946FB3;
+			remoteInfo = "Notification Switch";
+		};
+		9A1468F119D05A600093280B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1468CF19D05A5F0093280B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1468D619D05A5F0093280B;
+			remoteInfo = "Light Switch";
+		};
+		9A25BA3F1A2A2A0C00FD5D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1468CF19D05A5F0093280B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A25BA321A2A2A0B00FD5D95;
+			remoteInfo = LightServerKit;
+		};
+		9A25BA411A2A2A0C00FD5D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1468CF19D05A5F0093280B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1468D619D05A5F0093280B;
+			remoteInfo = "Light Switch";
+		};
+		9A25BA481A2A2A0C00FD5D95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1468CF19D05A5F0093280B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A25BA321A2A2A0B00FD5D95;
+			remoteInfo = LightServerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A25BA511A2A2A0C00FD5D95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A25BA4B1A2A2A0C00FD5D95 /* LightServerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5FC37F1A20C91000F7A149 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A116EFD1A2A347E00946FB3 /* Notification Switch.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A116EF11A2A347E00946FB3 /* Notification Switch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notification Switch.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A116EF51A2A347E00946FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A116EF61A2A347E00946FB3 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		9A116EF71A2A347E00946FB3 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		9A116EF91A2A347E00946FB3 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		9A1468D719D05A5F0093280B /* Light Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Light Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1468DB19D05A5F0093280B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1468DC19D05A5F0093280B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A1468E519D05A5F0093280B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A1468EA19D05A5F0093280B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A1468F019D05A600093280B /* Light SwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Light SwitchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1468F519D05A600093280B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1468F619D05A600093280B /* Light_SwitchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Light_SwitchTests.m; sourceTree = "<group>"; };
+		9A14690019D05A9E0093280B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A14690119D05A9E0093280B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A14690219D05A9E0093280B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A14690319D05A9E0093280B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A14690419D05A9E0093280B /* VSTDimmerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTDimmerServer.h; path = "../Light Switch/VSTDimmerServer.h"; sourceTree = "<group>"; };
+		9A14690519D05A9E0093280B /* VSTDimmerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTDimmerServer.m; path = "../Light Switch/VSTDimmerServer.m"; sourceTree = "<group>"; };
+		9A14690619D05A9E0093280B /* VSTDimmerBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTDimmerBeacon.h; sourceTree = "<group>"; };
+		9A14690719D05A9E0093280B /* VSTDimmerBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTDimmerBeacon.m; sourceTree = "<group>"; };
+		9A14690819D05A9E0093280B /* VSTCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTCommand.h; path = "../Light Switch/VSTCommand.h"; sourceTree = "<group>"; };
+		9A14690919D05A9E0093280B /* VSTCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTCommand.m; path = "../Light Switch/VSTCommand.m"; sourceTree = "<group>"; };
+		9A14690A19D05A9E0093280B /* VSTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSTLogger.h; path = "../Light Switch/VSTLogger.h"; sourceTree = "<group>"; };
+		9A14690B19D05A9E0093280B /* VSTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VSTLogger.m; path = "../Light Switch/VSTLogger.m"; sourceTree = "<group>"; };
+		9A14690C19D05A9E0093280B /* VSTLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTLogViewController.h; sourceTree = "<group>"; };
+		9A14690D19D05A9E0093280B /* VSTLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTLogViewController.m; sourceTree = "<group>"; };
+		9A14691519D05AD70093280B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		9A14691719D08F200093280B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
+		9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightServerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A25BA361A2A2A0C00FD5D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A25BA371A2A2A0C00FD5D95 /* LightServerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightServerKit.h; sourceTree = "<group>"; };
+		9A25BA3D1A2A2A0C00FD5D95 /* LightServerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightServerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A25BA451A2A2A0C00FD5D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A25BA461A2A2A0C00FD5D95 /* LightServerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightServerKitTests.m; sourceTree = "<group>"; };
+		9A3F69F81A2BDF7700303795 /* LightSwitchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightSwitchType.h; path = LightServerKit/LightSwitchType.h; sourceTree = SOURCE_ROOT; };
+		9A3F69F91A2BDF7700303795 /* LightSwitchType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightSwitchType.m; path = LightServerKit/LightSwitchType.m; sourceTree = SOURCE_ROOT; };
+		9A5FC36F1A20C91000F7A149 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9A7911051A2A36E00085166B /* Light Switch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Light Switch.entitlements"; sourceTree = "<group>"; };
+		9A7911061A2A37060085166B /* Notification Switch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Notification Switch.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A116EEE1A2A347E00946FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A116EF21A2A347E00946FB3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468D419D05A5F0093280B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A25BA4A1A2A2A0C00FD5D95 /* LightServerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468ED19D05A600093280B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA2F1A2A2A0B00FD5D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA3A1A2A2A0C00FD5D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A25BA3E1A2A2A0C00FD5D95 /* LightServerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A116EF31A2A347E00946FB3 /* Notification Switch */ = {
+			isa = PBXGroup;
+			children = (
+				9A7911061A2A37060085166B /* Notification Switch.entitlements */,
+				9A116EF61A2A347E00946FB3 /* TodayViewController.h */,
+				9A116EF71A2A347E00946FB3 /* TodayViewController.m */,
+				9A116EF91A2A347E00946FB3 /* MainInterface.storyboard */,
+				9A116EF41A2A347E00946FB3 /* Supporting Files */,
+			);
+			path = "Notification Switch";
+			sourceTree = "<group>";
+		};
+		9A116EF41A2A347E00946FB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A116EF51A2A347E00946FB3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A1468CE19D05A5F0093280B = {
+			isa = PBXGroup;
+			children = (
+				9A1468D919D05A5F0093280B /* Light Switch */,
+				9A1468F319D05A600093280B /* Light SwitchTests */,
+				9A116EF31A2A347E00946FB3 /* Notification Switch */,
+				9A25BA341A2A2A0C00FD5D95 /* LightServerKit */,
+				9A25BA431A2A2A0C00FD5D95 /* LightServerKitTests */,
+				9A5FC36E1A20C91000F7A149 /* Frameworks */,
+				9A1468D819D05A5F0093280B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A1468D819D05A5F0093280B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A1468D719D05A5F0093280B /* Light Switch.app */,
+				9A1468F019D05A600093280B /* Light SwitchTests.xctest */,
+				9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */,
+				9A25BA3D1A2A2A0C00FD5D95 /* LightServerKitTests.xctest */,
+				9A116EF11A2A347E00946FB3 /* Notification Switch.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A1468D919D05A5F0093280B /* Light Switch */ = {
+			isa = PBXGroup;
+			children = (
+				9A7911051A2A36E00085166B /* Light Switch.entitlements */,
+				9A14690019D05A9E0093280B /* AppDelegate.h */,
+				9A14690119D05A9E0093280B /* AppDelegate.m */,
+				9A14690219D05A9E0093280B /* ViewController.h */,
+				9A14690319D05A9E0093280B /* ViewController.m */,
+				9A14690619D05A9E0093280B /* VSTDimmerBeacon.h */,
+				9A14690719D05A9E0093280B /* VSTDimmerBeacon.m */,
+				9A14690C19D05A9E0093280B /* VSTLogViewController.h */,
+				9A14690D19D05A9E0093280B /* VSTLogViewController.m */,
+				9A1468E419D05A5F0093280B /* Main.storyboard */,
+				9A1468E919D05A5F0093280B /* LaunchScreen.xib */,
+				9A14691519D05AD70093280B /* Assets.xcassets */,
+				9A14691719D08F200093280B /* Settings.bundle */,
+				9A1468DA19D05A5F0093280B /* Supporting Files */,
+			);
+			path = "Light Switch";
+			sourceTree = "<group>";
+		};
+		9A1468DA19D05A5F0093280B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A1468DB19D05A5F0093280B /* Info.plist */,
+				9A1468DC19D05A5F0093280B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A1468F319D05A600093280B /* Light SwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1468F619D05A600093280B /* Light_SwitchTests.m */,
+				9A1468F419D05A600093280B /* Supporting Files */,
+			);
+			path = "Light SwitchTests";
+			sourceTree = "<group>";
+		};
+		9A1468F419D05A600093280B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A1468F519D05A600093280B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A25BA341A2A2A0C00FD5D95 /* LightServerKit */ = {
+			isa = PBXGroup;
+			children = (
+				9A25BA371A2A2A0C00FD5D95 /* LightServerKit.h */,
+				9A3F69F81A2BDF7700303795 /* LightSwitchType.h */,
+				9A3F69F91A2BDF7700303795 /* LightSwitchType.m */,
+				9A14690419D05A9E0093280B /* VSTDimmerServer.h */,
+				9A14690519D05A9E0093280B /* VSTDimmerServer.m */,
+				9A14690819D05A9E0093280B /* VSTCommand.h */,
+				9A14690919D05A9E0093280B /* VSTCommand.m */,
+				9A14690A19D05A9E0093280B /* VSTLogger.h */,
+				9A14690B19D05A9E0093280B /* VSTLogger.m */,
+				9A25BA351A2A2A0C00FD5D95 /* Supporting Files */,
+			);
+			path = LightServerKit;
+			sourceTree = "<group>";
+		};
+		9A25BA351A2A2A0C00FD5D95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A25BA361A2A2A0C00FD5D95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A25BA431A2A2A0C00FD5D95 /* LightServerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A25BA461A2A2A0C00FD5D95 /* LightServerKitTests.m */,
+				9A25BA441A2A2A0C00FD5D95 /* Supporting Files */,
+			);
+			path = LightServerKitTests;
+			sourceTree = "<group>";
+		};
+		9A25BA441A2A2A0C00FD5D95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A25BA451A2A2A0C00FD5D95 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5FC36E1A20C91000F7A149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5FC36F1A20C91000F7A149 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9A25BA301A2A2A0B00FD5D95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A25BA381A2A2A0C00FD5D95 /* LightServerKit.h in Headers */,
+				9A3F69FA1A2BDF7700303795 /* LightSwitchType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A116EF01A2A347E00946FB3 /* Notification Switch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A116EFE1A2A347E00946FB3 /* Build configuration list for PBXNativeTarget "Notification Switch" */;
+			buildPhases = (
+				9A116EED1A2A347E00946FB3 /* Sources */,
+				9A116EEE1A2A347E00946FB3 /* Frameworks */,
+				9A116EEF1A2A347E00946FB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notification Switch";
+			productName = "Notification Switch";
+			productReference = 9A116EF11A2A347E00946FB3 /* Notification Switch.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9A1468D619D05A5F0093280B /* Light Switch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1468FA19D05A600093280B /* Build configuration list for PBXNativeTarget "Light Switch" */;
+			buildPhases = (
+				9A1468D319D05A5F0093280B /* Sources */,
+				9A1468D419D05A5F0093280B /* Frameworks */,
+				9A1468D519D05A5F0093280B /* Resources */,
+				9A5FC37F1A20C91000F7A149 /* Embed App Extensions */,
+				9A25BA511A2A2A0C00FD5D95 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A25BA491A2A2A0C00FD5D95 /* PBXTargetDependency */,
+				9A116EFC1A2A347E00946FB3 /* PBXTargetDependency */,
+			);
+			name = "Light Switch";
+			productName = "Light Switch";
+			productReference = 9A1468D719D05A5F0093280B /* Light Switch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A1468EF19D05A600093280B /* Light SwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1468FD19D05A600093280B /* Build configuration list for PBXNativeTarget "Light SwitchTests" */;
+			buildPhases = (
+				9A1468EC19D05A600093280B /* Sources */,
+				9A1468ED19D05A600093280B /* Frameworks */,
+				9A1468EE19D05A600093280B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1468F219D05A600093280B /* PBXTargetDependency */,
+			);
+			name = "Light SwitchTests";
+			productName = "Light SwitchTests";
+			productReference = 9A1468F019D05A600093280B /* Light SwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A25BA321A2A2A0B00FD5D95 /* LightServerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A25BA501A2A2A0C00FD5D95 /* Build configuration list for PBXNativeTarget "LightServerKit" */;
+			buildPhases = (
+				9A25BA2E1A2A2A0B00FD5D95 /* Sources */,
+				9A25BA2F1A2A2A0B00FD5D95 /* Frameworks */,
+				9A25BA301A2A2A0B00FD5D95 /* Headers */,
+				9A25BA311A2A2A0B00FD5D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightServerKit;
+			productName = LightServerKit;
+			productReference = 9A25BA331A2A2A0C00FD5D95 /* LightServerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A25BA3C1A2A2A0C00FD5D95 /* LightServerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A25BA521A2A2A0C00FD5D95 /* Build configuration list for PBXNativeTarget "LightServerKitTests" */;
+			buildPhases = (
+				9A25BA391A2A2A0C00FD5D95 /* Sources */,
+				9A25BA3A1A2A2A0C00FD5D95 /* Frameworks */,
+				9A25BA3B1A2A2A0C00FD5D95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A25BA401A2A2A0C00FD5D95 /* PBXTargetDependency */,
+				9A25BA421A2A2A0C00FD5D95 /* PBXTargetDependency */,
+			);
+			name = LightServerKitTests;
+			productName = LightServerKitTests;
+			productReference = 9A25BA3D1A2A2A0C00FD5D95 /* LightServerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A1468CF19D05A5F0093280B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Vegard Solheim Theriault";
+				TargetAttributes = {
+					9A116EF01A2A347E00946FB3 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VP7R74RQV5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9A1468D619D05A5F0093280B = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = VP7R74RQV5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9A1468EF19D05A600093280B = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 9A1468D619D05A5F0093280B;
+					};
+					9A25BA321A2A2A0B00FD5D95 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VP7R74RQV5;
+					};
+					9A25BA3C1A2A2A0C00FD5D95 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9A1468D619D05A5F0093280B;
+					};
+				};
+			};
+			buildConfigurationList = 9A1468D219D05A5F0093280B /* Build configuration list for PBXProject "Light Switch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A1468CE19D05A5F0093280B;
+			productRefGroup = 9A1468D819D05A5F0093280B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A1468D619D05A5F0093280B /* Light Switch */,
+				9A1468EF19D05A600093280B /* Light SwitchTests */,
+				9A25BA321A2A2A0B00FD5D95 /* LightServerKit */,
+				9A25BA3C1A2A2A0C00FD5D95 /* LightServerKitTests */,
+				9A116EF01A2A347E00946FB3 /* Notification Switch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A116EEF1A2A347E00946FB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A116EFA1A2A347E00946FB3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468D519D05A5F0093280B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A14691819D08F200093280B /* Settings.bundle in Resources */,
+				9A1468E619D05A5F0093280B /* Main.storyboard in Resources */,
+				9A14691619D05AD70093280B /* Assets.xcassets in Resources */,
+				9A1468EB19D05A5F0093280B /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468EE19D05A600093280B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA311A2A2A0B00FD5D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA3B1A2A2A0C00FD5D95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A116EED1A2A347E00946FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7911071A2A3EDC0085166B /* VSTDimmerServer.m in Sources */,
+				9A7911091A2A3EE40085166B /* VSTCommand.m in Sources */,
+				9A3F69FC1A2BEB3400303795 /* LightSwitchType.m in Sources */,
+				9A116EF81A2A347E00946FB3 /* TodayViewController.m in Sources */,
+				9A79110B1A2A3EE80085166B /* VSTLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468D319D05A5F0093280B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A79110A1A2A3EE40085166B /* VSTCommand.m in Sources */,
+				9A14690F19D05A9E0093280B /* ViewController.m in Sources */,
+				9A14691119D05A9E0093280B /* VSTDimmerBeacon.m in Sources */,
+				9A79110C1A2A3EE90085166B /* VSTLogger.m in Sources */,
+				9A3F69FD1A2BEB3500303795 /* LightSwitchType.m in Sources */,
+				9A14690E19D05A9E0093280B /* AppDelegate.m in Sources */,
+				9A1468DD19D05A5F0093280B /* main.m in Sources */,
+				9A7911081A2A3EDD0085166B /* VSTDimmerServer.m in Sources */,
+				9A14691419D05A9E0093280B /* VSTLogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1468EC19D05A600093280B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1468F719D05A600093280B /* Light_SwitchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA2E1A2A2A0B00FD5D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A3F69FB1A2BDF7700303795 /* LightSwitchType.m in Sources */,
+				9A25BA551A2A2B5300FD5D95 /* VSTLogger.m in Sources */,
+				9A25BA531A2A2B1D00FD5D95 /* VSTDimmerServer.m in Sources */,
+				9A25BA541A2A2B5000FD5D95 /* VSTCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A25BA391A2A2A0C00FD5D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A25BA471A2A2A0C00FD5D95 /* LightServerKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A116EFC1A2A347E00946FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A116EF01A2A347E00946FB3 /* Notification Switch */;
+			targetProxy = 9A116EFB1A2A347E00946FB3 /* PBXContainerItemProxy */;
+		};
+		9A1468F219D05A600093280B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1468D619D05A5F0093280B /* Light Switch */;
+			targetProxy = 9A1468F119D05A600093280B /* PBXContainerItemProxy */;
+		};
+		9A25BA401A2A2A0C00FD5D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A25BA321A2A2A0B00FD5D95 /* LightServerKit */;
+			targetProxy = 9A25BA3F1A2A2A0C00FD5D95 /* PBXContainerItemProxy */;
+		};
+		9A25BA421A2A2A0C00FD5D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1468D619D05A5F0093280B /* Light Switch */;
+			targetProxy = 9A25BA411A2A2A0C00FD5D95 /* PBXContainerItemProxy */;
+		};
+		9A25BA491A2A2A0C00FD5D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A25BA321A2A2A0B00FD5D95 /* LightServerKit */;
+			targetProxy = 9A25BA481A2A2A0C00FD5D95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A1468E419D05A5F0093280B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A1468E519D05A5F0093280B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A1468E919D05A5F0093280B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A1468EA19D05A5F0093280B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A116EFF1A2A347E00946FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notification Switch/Notification Switch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Notification Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A116F001A2A347E00946FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Notification Switch/Notification Switch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Notification Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A1468F819D05A600093280B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A1468F919D05A600093280B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A1468FB19D05A600093280B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Light Switch/Light Switch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Light Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		9A1468FC19D05A600093280B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Light Switch/Light Switch.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Light Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		9A1468FE19D05A600093280B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Light SwitchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light Switch.app/Light Switch";
+			};
+			name = Debug;
+		};
+		9A1468FF19D05A600093280B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Light SwitchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light Switch.app/Light Switch";
+			};
+			name = Release;
+		};
+		9A25BA4C1A2A2A0C00FD5D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightServerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A25BA4D1A2A2A0C00FD5D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LightServerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A25BA4E1A2A2A0C00FD5D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightServerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light Switch.app/Light Switch";
+			};
+			name = Debug;
+		};
+		9A25BA4F1A2A2A0C00FD5D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightServerKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Light Switch.app/Light Switch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A116EFE1A2A347E00946FB3 /* Build configuration list for PBXNativeTarget "Notification Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A116EFF1A2A347E00946FB3 /* Debug */,
+				9A116F001A2A347E00946FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1468D219D05A5F0093280B /* Build configuration list for PBXProject "Light Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1468F819D05A600093280B /* Debug */,
+				9A1468F919D05A600093280B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1468FA19D05A600093280B /* Build configuration list for PBXNativeTarget "Light Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1468FB19D05A600093280B /* Debug */,
+				9A1468FC19D05A600093280B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1468FD19D05A600093280B /* Build configuration list for PBXNativeTarget "Light SwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1468FE19D05A600093280B /* Debug */,
+				9A1468FF19D05A600093280B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A25BA501A2A2A0C00FD5D95 /* Build configuration list for PBXNativeTarget "LightServerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A25BA4C1A2A2A0C00FD5D95 /* Debug */,
+				9A25BA4D1A2A2A0C00FD5D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A25BA521A2A2A0C00FD5D95 /* Build configuration list for PBXNativeTarget "LightServerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A25BA4E1A2A2A0C00FD5D95 /* Debug */,
+				9A25BA4F1A2A2A0C00FD5D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A1468CF19D05A5F0093280B /* Project object */;
+}
